@@ -1,0 +1,11 @@
+/*Layout: main*/
+
+//Base
+.main{
+  margin: 0 auto;
+  &__card-img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1em;
+  }
+}

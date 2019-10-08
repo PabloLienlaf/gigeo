@@ -1,0 +1,43 @@
+/*Component: Navigations*/
+
+//Base
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo span{
+    font-size: 11px;
+    font-family: $poppins;
+    margin-top:0;
+    position: absolute;
+  }
+
+  &__menu li {
+    margin: 10px;
+    font-size: 1.2rem;
+    .fa-bars {
+      color: $matterhorn;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__list {
+    display:flex;
+    align-items: center;
+    padding: 5px;
+    list-style:none
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .icon{
+    display: none!important;
+  }
+  .navigation__menu li {
+    .fa-bars {
+      color: $matterhorn;
+      font-size: 2.5rem;
+    }
+  }
+}
